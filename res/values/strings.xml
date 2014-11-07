@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">testForBD</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_profiles">Choice Profile</string>
+    
+    <string-array name="src_entries">
+        <item>resources</item>
+        <item>local folder</item>
+        <item>SD card</item>
+        <item>Google Drive</item>
+    </string-array>
+    <string-array name="eff_entries">
+        <item>from left to right</item>
+        <item>from top to bottom</item>
+        <item>fade in/out</item>
+    </string-array>
+    <string-array name="entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        </string-array>
+
+</resources>

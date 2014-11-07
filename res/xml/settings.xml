@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="catSrource"
+        android:title="Source of Pictures" >
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/src_entries"
+            android:entryValues="@array/entry_values"
+            android:key="lstSource"
+            android:title="Source Type" >
+        </ListPreference>
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="edtSource"
+            android:title="Source Folder" >
+        </EditTextPreference>
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="catEffect"
+        android:title="Effects" >
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/eff_entries"
+            android:entryValues="@array/entry_values"
+            android:key="lstEffect"
+            android:title="Change Picture Effect" >
+        </ListPreference>
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="catTime"
+        android:title="Timing" >
+        <EditTextPreference
+            android:defaultValue="2"
+            android:inputType="number"
+            android:key="edtInterval"
+            android:title="Show Interval in sec" >
+        </EditTextPreference>
+
+		<CheckBoxPreference
+        	android:key="chbStart"
+        	android:title="Enable Start show time" />
+        <com.example.testforbd.TimePreference
+	        android:dependency="chbStart"
+            android:defaultValue="00:00"
+            android:key="tmpStart"
+            android:title="Start show time" />
+		<CheckBoxPreference
+        	android:key="chbStop"
+        	android:title="Enable Stop show time" />
+        <com.example.testforbd.TimePreference
+	        android:dependency="chbStop"
+            android:defaultValue="00:00"
+            android:key="tmpStop"
+            android:title="Stop show time" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="catBool"
+        android:title="Switchs" >
+        <CheckBoxPreference
+            android:key="chbAsCharge"
+            android:summaryOff="Disable"
+            android:summaryOn="Show will start on charge"
+            android:title="Auto Start when charged" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="chbAsReboot"
+            android:summaryOff="Disable"
+            android:summaryOn="Show will start on reboot"
+            android:title="Auto Start after reboot" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="chbFullSrc"
+            android:summaryOff="Disable"
+            android:summaryOn="Full Screen mode"
+            android:title="Show Full Screen" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="chbBlock"
+            android:summaryOff="Disable"
+            android:summaryOn="Screen will block on Show"
+            android:title="Block Screen when show" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="chbDebug"
+            android:title="Debug Mode" >
+        </CheckBoxPreference>
+        </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="catSrource"
+        android:title="Chioce Profile" >
+        <ListPreference
+            android:defaultValue="1"
+            android:entryValues="@array/entry_values"
+            android:key="lstProfile"
+            android:title="Chioce Profile" >
+        </ListPreference>
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="edtProfile"
+            android:title="New Profile" >
+        </EditTextPreference>
+    </PreferenceCategory>
+ 
+</PreferenceScreen>
